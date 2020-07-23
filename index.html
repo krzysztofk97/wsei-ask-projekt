@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Symulator rozkazów procesora Intel 8086</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body onload="main()">
+        <div id="site">
+            <div id="site-content">
+                <div id="command-line-container">
+                    <input type="text" id="command-line" list="availible-commands" placeholder="Wpisz rozkaz tutaj..."/>
+                    <datalist id="availible-commands">
+                        <option value="MOV ">Kopiuje zawartość rejestru B do A</option>
+                        <option value="XCHG ">Zamienia ze sobą zawartości rejestrów A i B</option>
+                    </datalist>
+                    <button id="execute-command">RETURN</button>
+                </div>
+                <div class="register">
+                    <label for="input-ax" class="register-label">AX</label>
+                    <input type="text" id="input-ax" class="register-input"/>
+                    <input type="checkbox" id="checkbox-ax" class="register-checkbox"/>
+                    <a id="ax-checked-order"></a>
+                </div>
+                <div class="register">
+                    <label for="input-bx" class="register-label">BX</label>
+                    <input type="text" id="input-bx" class="register-input"/>
+                    <input type="checkbox" id="checkbox-bx"/>
+                    <a id="bx-checked-order"></a>
+                </div>
+                <div class="register">
+                    <label for="input-cx" class="register-label">CX</label>
+                    <input type="text" id="input-cx" class="register-input"/>
+                    <input type="checkbox" id="checkbox-cx"/>
+                    <a id="cx-checked-order"></a>
+                </div>
+                <div class="register">
+                    <label for="input-dx" class="register-label">DX</label>
+                    <input type="text" id="input-dx" class="register-input"/>
+                    <input type="checkbox" id="checkbox-dx"/>
+                    <a id="dx-checked-order"></a>
+                </div>
+                <div id="command-select-container">
+                    <select id="command-select">
+                        <option value="MOV">MOV</option>
+                        <option value="XCHG">XCHG</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

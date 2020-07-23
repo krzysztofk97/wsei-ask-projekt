@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "BalooDa2-Regular";
+    src: url("../assets/fonts/BalooDa2-Regular.ttf");
+}
+
+@font-face {
+    font-family: "BalooDa2-Bold";
+    src: url("../assets/fonts/BalooDa2-Bold.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input, select {
+    border: none;
+    border: 1px solid #121212;
+    color: black;
+    border-radius: none;
+}
+
+select{
+    text-align-last: center;
+}
+
+select option {
+    background-color: white;
+}
+
+*:focus {
+    outline: none;
+}
+
+button {
+    border: none;
+    background-color: hsl(200, 70%, 50%);
+    padding: 0 10px;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-family: "BaloDa2-Bold";
+    transition: all 0.3s;
+    border: 1px solid black;
+    border-radius: none;
+}
+
+button:hover {
+    background-color: hsl(200, 70%, 40%);
+}
+
+input::placeholder {
+    color: hsl(200, 70%, 70%);
+}
+
+#site {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    min-width: 320px;
+    background-color: white;
+}
+
+#site * {
+    font-family: "BalooDa2-Regular";
+}
+
+#site-content {
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+#command-line-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#command-line {
+    padding: 0 10px;
+    font-size: x-large;
+    width: 100%;
+    border-right: none;   
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    width: 50%;
+}
+
+.register-label {
+    font-size: large;
+    color: black;
+}
+
+.register-input {
+    padding: 0 10px;
+    font-size: large;
+    margin: 0 10px;
+}
+
+#command-select-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#command-select {
+    width: 25%;
+    font-size: x-large;
+    max-width: 150px;
+}
