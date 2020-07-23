@@ -116,10 +116,12 @@ function main() {
     });
 
     commandLine.addEventListener("keyup", key => {
-        key.preventDefault()
+        key.preventDefault();
 
-        if(key.keyCode == "13")
-            splitAndExecuteCommand(commandLine.value.toLowerCase())
+        if(key.keyCode == "13") {
+            splitAndExecuteCommand(commandLine.value.toLowerCase());
+            commandLine.value = "";
+        }
     });
 
     commandLine.addEventListener("input", () => {
